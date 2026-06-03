@@ -91,17 +91,58 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('contactFormMessage');
   if (contactForm) {
     contactForm.addEventListener('submit', function (event) {
       event.preventDefault();
-      const nameField = contactForm.querySelector('#name');
-      const phoneField = contactForm.querySelector('#phone');
-      if (!nameField.value.trim() || !phoneField.value.trim()) {
-        alert('Please provide your name and phone number to request an estimate.');
+      if (formMessage) {
+        formMessage.textContent = '';
+        formMessage.classList.remove('error', 'success');
+      }
+
+      const formData = new FormData(contactForm);
+      const name = (formData.get('name') || '').toString().trim();
+      const phone = (formData.get('phone') || '').toString().trim();
+      const email = (formData.get('email') || '').toString().trim();
+      const details = (formData.get('project_details') || '').toString().trim();
+
+      if (!name || !phone || !email || !details) {
+        if (formMessage) {
+          formMessage.textContent = 'Please complete all required fields.';
+          formMessage.classList.add('error');
+        } else {
+          alert('Please complete all required fields.');
+        }
         return;
       }
-      alert('Thank you — Flores Landscaping will contact you shortly to schedule your free consultation.');
-      contactForm.reset();
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then((response) => {
+        if (response.ok) {
+          if (formMessage) {
+            formMessage.textContent = 'Thank you. Your estimate request has been sent. We will follow up soon.';
+            formMessage.classList.add('success');
+          } else {
+            alert('Thank you. Your estimate request has been sent. We will follow up soon.');
+          }
+          contactForm.reset();
+        } else {
+          return response.json().then((data) => {
+            throw new Error(data?.error || 'Submission failed');
+          });
+        }
+      }).catch((err) => {
+        if (formMessage) {
+          formMessage.textContent = 'Sorry — there was a problem sending your request. Please try again later.';
+          formMessage.classList.add('error');
+        } else {
+          alert('Sorry — there was a problem sending your request. Please try again later.');
+        }
+        console.error(err);
+      });
     });
   }
 

@@ -187,7 +187,7 @@
           <h2>Start your luxury stonework project.</h2>
           <p>Share a few details and we’ll follow up with a clear consultation plan focused on stonework and curb appeal.</p>
         </div>
-        <form class="contact-form" id="contactForm" novalidate>
+        <form class="contact-form estimate-form" id="contactForm" action="https://formspree.io/f/mqeozvqd" method="POST" novalidate>
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required>
 
@@ -195,23 +195,29 @@
           <input id="phone" name="phone" type="tel" required>
 
           <label for="email">Email</label>
-          <input id="email" name="email" type="email">
+          <input id="email" name="email" type="email" required>
 
-          <label for="project">Project type</label>
-          <select id="project" name="project">
-            <option>Custom stone mailbox</option>
-            <option>Front entrance upgrade</option>
-            <option>Stone patio</option>
-            <option>Stone walkway</option>
-            <option>Stone wall</option>
-            <option>Masonry repair</option>
+          <label for="project-type">Project type</label>
+          <select id="project-type" name="project_type" required>
+            <option value="Custom stone mailbox">Custom stone mailbox</option>
+            <option value="Patio">Patio</option>
+            <option value="Stone walkway">Stone walkway</option>
+            <option value="Stone wall">Stone wall</option>
+            <option value="Grass installation">Grass installation</option>
+            <option value="Clean up">Clean up</option>
+            <option value="Masonry repair">Masonry repair</option>
+            <option value="Outdoor living">Outdoor living</option>
+            <option value="Other">Other</option>
           </select>
 
-          <label for="message">Project details</label>
-          <textarea id="message" name="message" rows="4"></textarea>
+          <label for="project-details">Project details</label>
+          <textarea id="project-details" name="project_details" rows="5" required></textarea>
+
+          <input type="hidden" name="_subject" value="New Flores Landscaping Estimate Request">
 
           <button class="btn btn-primary" type="submit">Send Request</button>
         </form>
+        <div id="contactFormMessage" class="form-message" aria-live="polite"></div>
       </section>
     </main>
 

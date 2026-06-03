@@ -799,6 +799,54 @@ button {
   background: linear-gradient(180deg, rgba(8,14,27,0.18), rgba(8,14,27,0.62));
 }
 
+/* Contact / estimate form styles */
+.contact-form,
+.estimate-form {
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(17, 40, 84, 0.08);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.contact-form textarea { resize: vertical; min-height: 120px; }
+
+.contact-form .btn { padding: 12px 24px; border-radius: 12px; }
+
+.form-message { margin-top: 12px; font-weight: 600; }
+.form-message.success {
+  color: var(--navy);
+  background: rgba(15,45,84,0.06);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+.form-message.error {
+  color: #8a1f1f;
+  background: rgba(255, 230, 230, 0.9);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .contact-form, .estimate-form { padding: 0; }
+}
+
 .process-preview-copy {
   position: absolute;
   left: 32px;
