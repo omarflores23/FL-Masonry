@@ -1,26 +1,31 @@
 # FL-Masonry
 
-Website for Flores Landscaping (floreslandscapingdmv.com): hand-built stone mailbox pillars and entrance stonework in Potomac, Bethesda, Rockville and Northwest DC. Published with GitHub Pages from `main`.
+Website for Flores Landscaping (floreslandscapingdmv.com): hand-built stone steps, walls, flagstone patios, water features and stone mailbox pillars by Juan Flores, serving Montgomery County, Washington, DC and Northern Virginia since 2002. Published with GitHub Pages from `main`.
+
+Designed for older homeowners: cream, forest green and brass; 20px body text; large buttons; the phone number on every screen; plain wording.
 
 ## Files
 
 | File | What it is |
 | --- | --- |
-| `index.html` | Home page: hero, pillar packages, about, services, process, service area, estimate form |
-| `work.html` | Gallery with filters and a full-screen photo viewer |
-| `site.css` | Styles for both pages |
+| `index.html` | Home page: hero, services, before and after, mailbox pillars, About Juan, recent work, landscaping, how it works, service area, estimate form |
+| `work.html` | Gallery with filter buttons and a photo viewer (Previous / Next / Close, arrow keys, Escape) |
+| `site.css` | All styles |
 | `site.js` | Mobile menu, estimate form (Formspree), gallery filters, photo viewer |
-| `images/` | Project photos |
+| `images/work/` | Project photos from the business Instagram (@floreslandscaping_dmv) |
+| `images/` | Earlier project photos, some still used |
 | `CNAME` | Custom domain for GitHub Pages |
 
-`styles.css` and `script.js` belong to the previous version and are no longer used. Delete them once the new version is live.
+`styles.css` and `script.js` belong to an earlier version and are no longer used. Delete them once this version is live.
+
+`site.css` and `site.js` are linked with a version tag (`?v=6`). Raise the number after editing either file so visitors' browsers load the new copy.
 
 ## Before merging to `main`, confirm
 
-1. **Prices.** The four "Starting at" prices in `index.html` are estimates. Replace them with real numbers.
-2. **Phone.** (240) 462-1150. Search `462-1150` and `+12404621150` to change it.
-3. **Social links.** The footer links to Facebook, Instagram and Yelp. Remove any that are no longer active.
-4. **Client address photo.** `images/mailbox_address_sign.jpg` shows a client's house number and street. The new pages don't use it. Blur it or delete it unless the client agreed.
+1. **Phone.** (240) 462-1150. Search `462-1150` and `+12404621150` to change it.
+2. **Wording about Juan.** The About section says he has worked with stone since 2002 and lists the stones he uses (taken from Instagram captions). Adjust anything that isn't right.
+3. **Client address photo.** `images/mailbox_address_sign.jpg` shows a client's house number and street. The site no longer uses it. Delete it or blur it.
+4. **A photo of Juan** would make the About section stronger. Add it to `images/work/` and swap it in.
 
 ## Preview locally
 
@@ -32,4 +37,4 @@ Then open http://localhost:8000.
 
 ## After it goes live
 
-Open the site on a phone, tap **Call**, and send one test estimate request to confirm it arrives.
+Open the site on a phone, tap **Call Now**, and send one test estimate request to confirm it arrives.

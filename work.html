@@ -3,93 +3,107 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Our Stonework | Flores Landscaping | Potomac, Bethesda &amp; DC</title>
-    <meta name="description" content="Stone mailbox pillars, entry steps, stone walls, flagstone paths and outdoor kitchens built by Flores Landscaping since 2002." />
+    <title>Our Work | Flores Landscaping | Stone Masonry Since 2002</title>
+    <meta name="description" content="Photos of stone steps, mailbox pillars, flagstone patios, stone walls, water features and outdoor kitchens built by Flores Landscaping." />
+    <meta name="theme-color" content="#1f3a2b" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css?v=6">
   </head>
   <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    </svg>
+
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span class="topbar-note">Free on-site estimates · Montgomery County, Washington DC &amp; Northern Virginia</span>
+        <a href="tel:+12404621150">Call (240) 462-1150</a>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Flores Landscaping home">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-name">Flores <span>Landscaping</span></span>
+        <a class="brand" href="index.html" aria-label="Flores Landscaping, home">
+          <span class="brand-name">Flores Landscaping</span>
+          <span class="brand-sub">Stone Masonry · Since 2002</span>
         </a>
-
-        <nav class="nav" id="nav" aria-label="Primary">
-          <a href="index.html#pillars">Mailbox Pillars</a>
-          <a href="work.html" aria-current="page">Gallery</a>
-          <a href="index.html#about">About</a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="index.html#services">Services</a>
+          <a href="work.html" aria-current="page">Our Work</a>
+          <a href="index.html#about">About Juan</a>
           <a href="index.html#contact">Contact</a>
         </nav>
-
-        <div class="header-actions">
-          <a class="header-phone" href="tel:+12404621150">(240) 462-1150</a>
-          <a class="btn btn-gold btn-sm" href="index.html#contact">Free Estimate</a>
-          <button class="nav-toggle" id="navToggle" aria-controls="nav" aria-expanded="false">Menu</button>
-        </div>
+        <a class="btn btn-primary header-call" href="tel:+12404621150"><svg class="icon"><use href="#i-phone"/></svg>(240) 462-1150</a>
+        <button class="nav-toggle" id="navToggle" aria-controls="nav" aria-expanded="false">Menu</button>
       </div>
     </header>
 
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow eyebrow-light">Our work</p>
-          <h1>Stonework built by hand since 2002.</h1>
-          <p>Mailbox pillars, entrances, walls and paths from homes across Montgomery County, DC and Northern Virginia.</p>
+          <p class="kicker">Our work</p>
+          <h1>Stonework we've built by hand.</h1>
+          <p class="lead">Real projects from homes across Montgomery County, Washington, DC and Northern Virginia. Tap any photo to see it larger.</p>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" style="padding-top:0">
         <div class="container">
-          <div class="filters" role="group" aria-label="Filter projects">
-            <button type="button" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" data-filter="mailbox" aria-pressed="false">Mailbox pillars</button>
-            <button type="button" data-filter="entrances" aria-pressed="false">Entrances &amp; steps</button>
+          <div class="filters" role="group" aria-label="Show photos of">
+            <button type="button" data-filter="all" aria-pressed="true">All work</button>
+            <button type="button" data-filter="steps" aria-pressed="false">Steps &amp; entrances</button>
+            <button type="button" data-filter="pillars" aria-pressed="false">Mailbox pillars</button>
+            <button type="button" data-filter="patios" aria-pressed="false">Patios &amp; walkways</button>
             <button type="button" data-filter="walls" aria-pressed="false">Stone walls</button>
-            <button type="button" data-filter="paths" aria-pressed="false">Patios &amp; walkways</button>
+            <button type="button" data-filter="water" aria-pressed="false">Water features</button>
             <button type="button" data-filter="outdoor" aria-pressed="false">Outdoor living</button>
-            <button type="button" data-filter="repairs" aria-pressed="false">Repairs</button>
+            <button type="button" data-filter="landscaping" aria-pressed="false">Landscaping</button>
           </div>
 
           <div class="gallery">
-            <figure data-cat="mailbox"><button type="button"><img src="images/hero-stone-mailbox.jpeg" alt="Natural stone mailbox pillar with arched mailbox door" loading="lazy"></button><figcaption>Natural stone mailbox pillar</figcaption></figure>
-            <figure data-cat="mailbox"><button type="button"><img src="images/mailbox_cleaned.jpg" alt="Stacked stone mailbox pillar with cap stone and built-in mailbox" loading="lazy"></button><figcaption>Stacked stone pillar with cap stone</figcaption></figure>
-
-            <figure data-cat="entrances"><button type="button"><img src="images/gallery-front-entrance-stone-entry-stairs-1.jpg" alt="Stone entry stairs with stone side walls leading to a front door" loading="lazy"></button><figcaption>Stone entry stairs and side walls</figcaption></figure>
-            <figure data-cat="entrances"><button type="button"><img src="images/gallery-front-entrance-flagstone-steps-1.jpg" alt="Flagstone entry steps leading to a home" loading="lazy"></button><figcaption>Flagstone entry steps</figcaption></figure>
-            <figure data-cat="entrances"><button type="button"><img src="images/gallery-stone-walkways-hillside-steps-1.jpg" alt="Natural stone steps built into a hillside" loading="lazy"></button><figcaption>Hillside stone steps</figcaption></figure>
-            <figure data-cat="entrances"><button type="button"><img src="images/gallery-stone-walkways-natural-stone-steps-1.jpg" alt="Natural stone steps built into a wooded slope" loading="lazy"></button><figcaption>Natural stone steps on a wooded slope</figcaption></figure>
-            <figure data-cat="entrances"><button type="button"><img src="images/gallery-patios-paver-steps-entry-1.jpg" alt="Paver entry with steps" loading="lazy"></button><figcaption>Paver entry with steps</figcaption></figure>
-
-            <figure data-cat="walls"><button type="button"><img src="images/gallery-front-entrance-stone-wall-lawn-1.jpg" alt="Front yard natural stone wall beside a walkway" loading="lazy"></button><figcaption>Front yard stone wall</figcaption></figure>
-            <figure data-cat="walls"><button type="button"><img src="images/gallery-stone-walls-brick-retaining-wall-1.jpg" alt="Brick retaining wall along a driveway" loading="lazy"></button><figcaption>Brick retaining wall along a driveway</figcaption></figure>
-
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-stone-walkways-natural-flagstone-path-1.jpg" alt="Natural flagstone walkway through a garden" loading="lazy"></button><figcaption>Natural flagstone garden path</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-stone-walkways-flagstone-front-2.jpg" alt="Flagstone walkway through a front lawn" loading="lazy"></button><figcaption>Flagstone front walkway</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-stone-walkways-curved-entry-path-1.jpg" alt="Curved stone walkway with garden beds" loading="lazy"></button><figcaption>Curved entry walkway</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-stone-walkways-brick-entry-path-1.jpg" alt="Brick walkway leading to a home entrance" loading="lazy"></button><figcaption>Brick entry path</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-clean-ups-stepping-stone-side-path-1.jpg" alt="Stepping-stone side path through a planting bed" loading="lazy"></button><figcaption>Stepping-stone side path</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/hero-stone-patio.jpeg" alt="Finished natural stone patio" loading="lazy"></button><figcaption>Natural stone patio</figcaption></figure>
-            <figure data-cat="paths"><button type="button"><img src="images/gallery-patios-brick-courtyard-1.jpg" alt="Brick courtyard patio with wood fencing" loading="lazy"></button><figcaption>Brick courtyard patio</figcaption></figure>
-
-            <figure data-cat="outdoor"><button type="button"><img src="images/hero-outdoor-stone-kitchen.jpeg" alt="Outdoor stone kitchen on a stone patio" loading="lazy"></button><figcaption>Outdoor stone kitchen</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/entry-steps-bluestone.jpg" alt="Wide natural stone entry steps with stone side walls" loading="lazy"></button><figcaption>Natural stone entry steps</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/curved-stone-stairs.jpg" alt="Curved natural stone stairs through a garden" loading="lazy"></button><figcaption>Curved stone garden stairs</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/after-bluestone-patio.jpg" alt="Large bluestone patio laid in cut rectangular stones" loading="lazy"></button><figcaption>Bluestone patio (see the before and after on our home page)</figcaption></figure>
+            <figure data-cat="pillars"><button type="button"><img src="images/hero-stone-mailbox.jpeg" alt="Natural stone mailbox pillar with arched mailbox door" loading="lazy"></button><figcaption>Natural stone mailbox pillar</figcaption></figure>
+            <figure data-cat="pillars"><button type="button"><img src="images/mailbox_cleaned.jpg" alt="Stacked stone mailbox pillar with cap stone" loading="lazy"></button><figcaption>Stacked stone pillar with cap stone</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/round-flagstone-patio.jpg" alt="Round flagstone patio set into a lawn" loading="lazy"></button><figcaption>Round flagstone patio</figcaption></figure>
+            <figure data-cat="walls"><button type="button"><img src="images/work/stacked-stone-retaining-wall.jpg" alt="Stacked natural stone retaining wall" loading="lazy"></button><figcaption>Stacked stone retaining wall</figcaption></figure>
+            <figure data-cat="water"><button type="button"><img src="images/work/waterfall-pond.jpg" alt="Backyard pond with a stone waterfall" loading="lazy"></button><figcaption>Pond with stone waterfall</figcaption></figure>
+            <figure data-cat="outdoor"><button type="button"><img src="images/work/outdoor-stone-kitchen.jpg" alt="Outdoor kitchen with stacked stone base" loading="lazy"></button><figcaption>Outdoor stone kitchen</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/irregular-flagstone-patio.jpg" alt="Irregular flagstone patio with hand-fitted joints" loading="lazy"></button><figcaption>Irregular flagstone patio</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/garden-stone-steps.jpg" alt="Stone steps through a shaded garden" loading="lazy"></button><figcaption>Garden stone steps</figcaption></figure>
+            <figure data-cat="walls"><button type="button"><img src="images/work/carderock-stone-wall.jpg" alt="Natural stone wall beside a garden path" loading="lazy"></button><figcaption>Natural stone wall and path</figcaption></figure>
+            <figure data-cat="water"><button type="button"><img src="images/work/stone-waterfall.jpg" alt="Natural stone waterfall spilling into a pond" loading="lazy"></button><figcaption>Stone waterfall</figcaption></figure>
+            <figure data-cat="outdoor"><button type="button"><img src="images/work/stone-fire-pit.jpg" alt="Round stone fire pit" loading="lazy"></button><figcaption>Stone fire pit</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/squared-flagstone-patio.jpg" alt="Squared flagstone patio beside a deck" loading="lazy"></button><figcaption>Squared flagstone patio</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/stone-garden-stairs.jpg" alt="Stone stairs climbing a planted slope" loading="lazy"></button><figcaption>Stone stairs up a planted slope</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/flagstone-path-river-rock.jpg" alt="Flagstone path edged with river rock" loading="lazy"></button><figcaption>Flagstone path with river rock</figcaption></figure>
+            <figure data-cat="water"><button type="button"><img src="images/work/stone-pond.jpg" alt="Garden pond ringed with large natural stones" loading="lazy"></button><figcaption>Garden pond in natural stone</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/curved-patio-seat-wall.jpg" alt="Curved patio with a brick seat wall" loading="lazy"></button><figcaption>Curved patio with seat wall</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/natural-stone-hillside-steps.jpg" alt="Natural stone steps set into a hillside" loading="lazy"></button><figcaption>Natural stone hillside steps</figcaption></figure>
+            <figure data-cat="walls"><button type="button"><img src="images/work/stone-wall-fire-pit-yard.jpg" alt="Stone wall and fire pit area in a wooded yard" loading="lazy"></button><figcaption>Stone wall and fire pit area</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/flagstone-side-path.jpg" alt="Flagstone side path along a fence" loading="lazy"></button><figcaption>Flagstone side path</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/work/brick-entry-steps.jpg" alt="Brick entry steps leading to a front door" loading="lazy"></button><figcaption>Brick entry steps</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/flagstone-patio-detail.jpg" alt="Close view of irregular flagstone patio" loading="lazy"></button><figcaption>Flagstone patio detail</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/stepping-stone-garden.jpg" alt="Stepping stones through a garden bed" loading="lazy"></button><figcaption>Stepping stones through the garden</figcaption></figure>
+            <figure data-cat="walls"><button type="button"><img src="images/work/stone-cap-handwork.jpg" alt="Cap stone being set in mortar on a stacked stone wall" loading="lazy"></button><figcaption>Setting a cap stone by hand</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/work/before-backyard.jpg" alt="The backyard before the bluestone patio was built" loading="lazy"></button><figcaption>Before: the backyard ready for a new patio</figcaption></figure>
+            <figure data-cat="landscaping"><button type="button"><img src="images/work/garden-bed-planting.jpg" alt="New garden beds around a curved lawn" loading="lazy"></button><figcaption>New garden beds and lawn</figcaption></figure>
+            <figure data-cat="landscaping"><button type="button"><img src="images/work/front-yard-landscape.jpg" alt="Front yard planting beds in front of a brick home" loading="lazy"></button><figcaption>Front yard planting</figcaption></figure>
+            <figure data-cat="landscaping"><button type="button"><img src="images/work/flower-planting.jpg" alt="Bright pink flowers in a new planting bed" loading="lazy"></button><figcaption>Seasonal flowers</figcaption></figure>
             <figure data-cat="outdoor"><button type="button"><img src="images/hero-patio-firepit.jpeg" alt="Stone patio with fire pit and seating" loading="lazy"></button><figcaption>Patio with fire pit</figcaption></figure>
-            <figure data-cat="outdoor"><button type="button"><img src="images/gallery-outdoor-living-fire-pit-1.jpg" alt="Stone fire pit area with natural stone seating" loading="lazy"></button><figcaption>Fire pit with natural stone seating</figcaption></figure>
-            <figure data-cat="outdoor"><button type="button"><img src="images/gallery-patios-flagstone-seating-wall-1.jpg" alt="Flagstone patio with curved stone seating wall" loading="lazy"></button><figcaption>Flagstone patio with curved seating wall</figcaption></figure>
-            <figure data-cat="outdoor"><button type="button"><img src="images/gallery-outdoor-living-patio-seating-area-1.jpg" alt="Stone patio seating area" loading="lazy"></button><figcaption>Patio seating area</figcaption></figure>
-            <figure data-cat="outdoor"><button type="button"><img src="images/process-finish.jpg" alt="Finished natural stone water feature" loading="lazy"></button><figcaption>Natural stone water feature</figcaption></figure>
-
-            <figure data-cat="repairs"><button type="button"><img src="images/gallery-masonry-repairs-walkway-cutting-1.jpg" alt="Cutting stone during a walkway repair" loading="lazy"></button><figcaption>Walkway repair in progress</figcaption></figure>
+            <figure data-cat="steps"><button type="button"><img src="images/gallery-stone-walkways-natural-stone-steps-1.jpg" alt="Natural stone steps on a wooded slope" loading="lazy"></button><figcaption>Stone steps on a wooded slope</figcaption></figure>
+            <figure data-cat="patios"><button type="button"><img src="images/gallery-patios-flagstone-seating-wall-1.jpg" alt="Flagstone patio with curved stone seating wall" loading="lazy"></button><figcaption>Flagstone patio with stone seating wall</figcaption></figure>
           </div>
 
-          <div class="gallery-cta">
-            <h2>Want something like this at your home?</h2>
-            <div class="cta-row" style="justify-content:center">
-              <a class="btn btn-gold" href="index.html#contact">Request a Free Estimate</a>
-              <a class="btn btn-gold" href="tel:+12404621150" style="background:var(--navy);color:#fff">Call (240) 462-1150</a>
+          <div class="section-head center narrow" style="margin:80px auto 0">
+            <h2>Would you like something like this at your home?</h2>
+            <p class="lead center" style="margin-top:12px">Call for a free on-site visit and written estimate.</p>
+            <div class="btn-row" style="justify-content:center;margin-top:24px">
+              <a class="btn btn-primary" href="tel:+12404621150"><svg class="icon"><use href="#i-phone"/></svg>Call (240) 462-1150</a>
+              <a class="btn btn-outline" href="index.html#contact">Request a Free Estimate</a>
             </div>
           </div>
         </div>
@@ -97,31 +111,45 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <p class="footer-brand">Flores Landscaping</p>
-          <p>Stone masonry since 2002 · Potomac, Bethesda, Rockville, NW DC</p>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-brand">Flores Landscaping</p>
+            <p>Hand-built stone masonry and landscaping. Family-owned since 2002.</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="tel:+12404621150">(240) 462-1150</a></li>
+              <li><a href="index.html#contact">Request an estimate</a></li>
+              <li><a href="https://www.instagram.com/floreslandscaping_dmv/" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="work.html">Our work</a></li>
+              <li><a href="index.html#about">About Juan</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="tel:+12404621150">(240) 462-1150</a>
-          <a href="https://www.facebook.com/profile.php?id=100049560979613" rel="noopener">Facebook</a>
-          <a href="https://www.instagram.com/lustrous_landscape/" rel="noopener">Instagram</a>
-          <a href="https://yelp.to/qTKq/NE5P4L0BE5" rel="noopener">Yelp</a>
-        </div>
-        <p class="copyright">&copy; <span id="year">2026</span> Flores Landscaping</p>
+        <p class="copyright">&copy; <span id="year">2026</span> Flores Landscaping. Serving Montgomery County, Washington, DC and Northern Virginia.</p>
       </div>
     </footer>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project photo">
-      <button class="lightbox-close" type="button">Close</button>
-      <img src="" alt="">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button class="lb-btn lb-close" type="button">Close ✕</button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">← Previous</button>
+      <figure><img src="" alt=""><figcaption></figcaption></figure>
+      <button class="lb-btn lb-next" type="button" aria-label="Next photo">Next →</button>
     </div>
 
-    <div class="mobile-bar">
-      <a href="tel:+12404621150">Call</a>
-      <a href="index.html#contact" class="mobile-bar-primary">Free Estimate</a>
-    </div>
+    <nav class="mobile-bar" aria-label="Quick contact">
+      <a href="tel:+12404621150"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
+      <a class="alt" href="index.html#contact">Free Estimate</a>
+    </nav>
 
-    <script src="site.js"></script>
+    <script src="site.js?v=6"></script>
   </body>
 </html>
