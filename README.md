@@ -1,44 +1,35 @@
 # FL-Masonry
-Premium stonework website scaffold for custom stone mailboxes and front entrance upgrades.
 
-Files added:
-- `index.html` — homepage and sections (hero, services, gallery, contact form)
-- `styles.css` — responsive styles with accessible typography and color palette
-- `script.js` — small JS for mobile nav, year, and form handling
+Website for Flores Landscaping (floreslandscapingdmv.com): hand-built stone mailbox pillars and entrance stonework in Potomac, Bethesda, Rockville and Northwest DC. Published with GitHub Pages from `main`.
 
-How to use:
-1. Open `index.html` in a browser (double-click or serve with a static server).
-2. Replace placeholder images with real project photos to improve SEO and trust.
-3. Update the phone number in `index.html` to the business phone.
-4. Hook the contact form to your backend or form service (Mailgun, Formspree, Netlify Forms, etc.).
+## Files
 
-Design notes:
-- Focused on older, higher-income homeowners in MD/DC/VA.
-- Emphasizes custom stone mailboxes and front entrance upgrades; finishing touches (mulch, edging, planting) are shown only as add-ons to masonry work.
-- Large type, clear CTAs, and high-contrast colors for readability and accessibility.
+| File | What it is |
+| --- | --- |
+| `index.html` | Home page: hero, pillar packages, about, services, process, service area, estimate form |
+| `work.html` | Gallery with filters and a full-screen photo viewer |
+| `site.css` | Styles for both pages |
+| `site.js` | Mobile menu, estimate form (Formspree), gallery filters, photo viewer |
+| `images/` | Project photos |
+| `CNAME` | Custom domain for GitHub Pages |
 
-To serve locally (quick):
+`styles.css` and `script.js` belong to the previous version and are no longer used. Delete them once the new version is live.
 
-Using Python 3 (built-in):
+## Before merging to `main`, confirm
+
+1. **Prices.** The four "Starting at" prices in `index.html` are estimates. Replace them with real numbers.
+2. **Phone.** (240) 462-1150. Search `462-1150` and `+12404621150` to change it.
+3. **Social links.** The footer links to Facebook, Instagram and Yelp. Remove any that are no longer active.
+4. **Client address photo.** `images/mailbox_address_sign.jpg` shows a client's house number and street. The new pages don't use it. Blur it or delete it unless the client agreed.
+
+## Preview locally
+
 ```bash
-python -m http.server 8000
-# then open http://localhost:8000 in your browser
+python3 -m http.server 8000
 ```
 
-Using Node (serve):
-```bash
-npx serve . 3000
-# then open http://localhost:3000 in your browser
-```
+Then open http://localhost:8000.
 
-Files to replace with real content:
-- `images/hero.svg` — hero image placeholder
-- `images/mailbox1.svg`, `mailbox2.svg`, `mailbox3.svg`, `entrance.svg` — service cards
-- `images/before.svg`, `images/after.svg` — gallery placeholders
+## After it goes live
 
-Open `index.html` after serving to view the full layout and replace the SVGs with real photos (use the same filenames or update the `src` attributes in `index.html`).
-
-Next steps:
-- Add real project photos to the `images/` folder and update `index.html` image tags.
-- Provide the business phone number, company name, and any certifications to include on the site.
-
+Open the site on a phone, tap **Call**, and send one test estimate request to confirm it arrives.

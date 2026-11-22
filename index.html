@@ -3,228 +3,287 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Flores Landscaping—premium stone masonry and curb appeal upgrades for refined homes." />
-    <title>Flores Landscaping | Luxury Stone Masonry</title>
+    <title>Stone Mailbox Pillars &amp; Masonry | Flores Landscaping | Potomac, Bethesda &amp; DC</title>
+    <meta name="description" content="Hand-built natural stone mailbox pillars, entrance piers, steps and walls. Serving Potomac, Bethesda, Rockville and Northwest DC since 2002. Free estimates." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Flores Landscaping",
+      "url": "https://floreslandscapingdmv.com/",
+      "telephone": "+1-240-462-1150",
+      "foundingDate": "2002",
+      "image": "https://floreslandscapingdmv.com/images/hero-stone-mailbox.jpeg",
+      "description": "Hand-built natural stone mailbox pillars, entrance piers, steps and walls.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Silver Spring", "addressRegion": "MD", "addressCountry": "US" },
+      "areaServed": ["Potomac, MD", "Bethesda, MD", "Rockville, MD", "North Potomac, MD", "Chevy Chase, MD", "Washington, DC", "McLean, VA", "Arlington, VA", "Alexandria, VA"]
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="Flores Landscaping home">
           <span class="brand-mark" aria-hidden="true"></span>
-          <strong>Flores</strong> Landscaping
+          <span class="brand-name">Flores <span>Landscaping</span></span>
         </a>
 
-        <nav class="nav" id="nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="work.html">Gallery</a></li>
-            <li><a href="index.html#process">Process</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="#pillars">Mailbox Pillars</a>
+          <a href="work.html">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <div class="header-actions">
-          <a class="btn btn-primary" href="#contact">Request an Estimate</a>
+          <a class="header-phone" href="tel:+12404621150">(240) 462-1150</a>
+          <a class="btn btn-gold btn-sm" href="#contact">Free Estimate</a>
           <button class="nav-toggle" id="navToggle" aria-controls="nav" aria-expanded="false">Menu</button>
         </div>
       </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
-        <div class="hero-slideshow">
-          <div class="hero-slide hero-slide--mailbox active">
-            <img src="images/hero-stone-mailbox.jpeg" alt="Custom stone mailbox built by Flores Landscaping">
-          </div>
-          <div class="hero-slide hero-slide--patio">
-            <img src="images/hero-stone-patio.jpeg" alt="Finished stone patio built by Flores Landscaping">
-          </div>
-          <div class="hero-slide hero-slide--firepit">
-            <img src="images/hero-patio-firepit.jpeg" alt="Finished stone patio with firepit and seating">
-          </div>
-          <div class="hero-slide hero-slide--kitchen">
-            <img src="images/hero-outdoor-stone-kitchen.jpeg" alt="Outdoor stone kitchen and patio feature by Flores Landscaping">
-          </div>
-        </div>
-        <div class="hero-overlay"></div>
+        <img class="hero-img" src="images/hero-stone-mailbox.jpeg" alt="Natural stone mailbox pillar built by Flores Landscaping" fetchpriority="high">
+        <div class="hero-shade"></div>
         <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Refined stonework. Lasting first impressions.</p>
-            <h1>Elegant Masonry</h1>
-            <p class="hero-subtitle">Elegant stonework for homes that deserve detail.</p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="#contact">Request an Estimate</a>
-                <a class="btn btn-secondary" href="work.html">View Gallery</a>
+          <p class="eyebrow eyebrow-light">Stone masonry since 2002</p>
+          <h1>Hand-built stone mailbox pillars and entrances.</h1>
+          <p class="hero-sub">Natural stone, shaped by hand, for homes in Potomac, Bethesda, Rockville and Northwest DC.</p>
+          <div class="cta-row">
+            <a class="btn btn-gold" href="#contact">Request a Free Estimate</a>
+            <a class="btn btn-ghost" href="tel:+12404621150">Call (240) 462-1150</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST STRIP -->
+      <section class="trust" aria-label="Why Flores Landscaping">
+        <div class="container trust-inner">
+          <div><strong>Since 2002</strong><span>20+ years of stonework</span></div>
+          <div><strong>Shaped by hand</strong><span>Natural stone, fitted piece by piece</span></div>
+          <div><strong>Free estimates</strong><span>Written quote after a site visit</span></div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE: MAILBOX PILLARS -->
+      <section class="section" id="pillars">
+        <div class="container split">
+          <div class="split-media">
+            <img src="images/mailbox_cleaned.jpg" alt="Stacked natural stone mailbox pillar with cap stone and built-in mailbox" loading="lazy">
+          </div>
+          <div class="split-copy">
+            <p class="eyebrow">Signature work</p>
+            <h2>A stone mailbox pillar is the first thing people see.</h2>
+            <p>We build each pillar on a poured concrete footing, lay natural stone by hand, and finish it with a cut stone cap and a built-in mailbox. It's built to stand for decades and to match your home's stonework.</p>
+            <ul class="checks">
+              <li>Poured concrete footing so the pillar stays plumb</li>
+              <li>Stone selected and shaped to fit your home</li>
+              <li>Built-in locking or standard mailbox, address plaque, newspaper slot or planter</li>
+              <li>Placement checked against Postal Service height and setback guidance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Packages: CONFIRM PRICES BEFORE PUBLISHING -->
+        <div class="container">
+          <div class="packages">
+            <article class="package">
+              <h3>Classic Pillar</h3>
+              <p class="price">Starting at $2,800</p>
+              <p>Concrete footing, natural stone pillar, mailbox, flat stone cap.</p>
+            </article>
+            <article class="package package-featured">
+              <span class="tag">Recommended</span>
+              <h3>Signature Pillar</h3>
+              <p class="price">Starting at $3,800</p>
+              <p>Everything in Classic, plus a cut stone cap, address plaque, and a newspaper slot or planter.</p>
+            </article>
+            <article class="package">
+              <h3>Estate Entrance</h3>
+              <p class="price">Starting at $9,000</p>
+              <p>A mailbox pillar with a matching pair of driveway piers. Lighting wired by a licensed electrician.</p>
+            </article>
+            <article class="package">
+              <h3>Pillar Restoration</h3>
+              <p class="price">Starting at $600</p>
+              <p>Rebuild, repoint or re-cap an existing stone or brick mailbox, including snowplow damage.</p>
+            </article>
+          </div>
+          <p class="fine">Final price depends on size, stone and site. Every quote is in writing before work begins.</p>
+        </div>
+      </section>
+
+      <!-- ABOUT / CRAFT -->
+      <section class="section section-dark" id="about">
+        <div class="container split split-reverse">
+          <div class="split-media">
+            <img src="images/process-installation.jpg" alt="Flores Landscaping setting natural stone by hand on a job site" loading="lazy">
+          </div>
+          <div class="split-copy">
+            <p class="eyebrow eyebrow-light">Built by hand</p>
+            <h2>Twenty years of shaping stone.</h2>
+            <p>Flores Landscaping has built stonework across Maryland, DC and Northern Virginia since 2002: driveways, patios, walls, steps, and natural paths made from irregular stone shaped to fit by hand.</p>
+            <p>That same craft now goes into the front of your home. The person who quotes your job is the craftsman who builds it.</p>
+            <a class="btn btn-gold" href="work.html">See our work</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MORE STONEWORK -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">More stonework</p>
+            <h2>From the mailbox to the front door.</h2>
+          </div>
+          <div class="cards">
+            <a class="card" href="work.html#entrances">
+              <img src="images/gallery-front-entrance-stone-entry-stairs-1.jpg" alt="Natural stone entry stairs with stone side walls leading to a home" loading="lazy">
+              <div class="card-body">
+                <h3>Entrances &amp; steps</h3>
+                <p>Stone stairs, landings, driveway piers and entry columns.</p>
+              </div>
+            </a>
+            <a class="card" href="work.html#walls">
+              <img src="images/gallery-front-entrance-stone-wall-lawn-1.jpg" alt="Front yard natural stone wall beside a walkway" loading="lazy">
+              <div class="card-body">
+                <h3>Stone walls</h3>
+                <p>Garden, retaining and entrance walls in natural stone.</p>
+              </div>
+            </a>
+            <a class="card" href="work.html#outdoor">
+              <img src="images/hero-outdoor-stone-kitchen.jpeg" alt="Outdoor stone kitchen on a stone patio" loading="lazy">
+              <div class="card-body">
+                <h3>Outdoor kitchens &amp; fire pits</h3>
+                <p>Stone grill surrounds, fire pits and seating walls.</p>
+              </div>
+            </a>
+            <a class="card" href="work.html#paths">
+              <img src="images/gallery-stone-walkways-natural-flagstone-path-1.jpg" alt="Natural flagstone walkway through a garden" loading="lazy">
+              <div class="card-body">
+                <h3>Patios &amp; walkways</h3>
+                <p>Flagstone and natural stone paths and patios.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section section-tint" id="process">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">How it works</p>
+            <h2>Four steps, one point of contact.</h2>
+          </div>
+          <ol class="steps">
+            <li><span>1</span><h3>Site visit</h3><p>We look at the spot, your home's stone and what you have in mind.</p></li>
+            <li><span>2</span><h3>Written estimate</h3><p>A clear quote with the design, stone and price before any work starts.</p></li>
+            <li><span>3</span><h3>Build</h3><p>Footing, stonework and cap, built by hand. Most pillars take a few days.</p></li>
+            <li><span>4</span><h3>Clean finish</h3><p>We clean the site and walk through the finished work with you.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SERVICE AREA -->
+      <section class="section">
+        <div class="container area">
+          <div>
+            <p class="eyebrow">Where we work</p>
+            <h2>Serving Montgomery County, DC and Northern Virginia.</h2>
+          </div>
+          <ul class="towns">
+            <li>Potomac</li><li>North Potomac</li><li>Bethesda</li><li>Rockville</li><li>Chevy Chase</li><li>Northwest DC</li><li>McLean</li><li>Arlington</li><li>Alexandria</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section-dark" id="contact">
+        <div class="container contact">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">Free estimate</p>
+            <h2>Tell us about your project.</h2>
+            <p>Send a few details and we'll call to set up a site visit. Prefer to talk now?</p>
+            <a class="contact-phone" href="tel:+12404621150">(240) 462-1150</a>
+            <p class="contact-note">Mention your town and what's there today. Photos of the spot help too.</p>
+          </div>
+
+          <form class="form" id="estimateForm" action="https://formspree.io/f/mqeozvqd" method="POST" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
             </div>
-          </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="optional">(optional)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="town">Town</label>
+                <input id="town" name="town" type="text" autocomplete="address-level2" placeholder="e.g. Potomac">
+              </div>
+              <div class="field">
+                <label for="project-type">Project</label>
+                <select id="project-type" name="project_type">
+                  <option>Stone mailbox pillar</option>
+                  <option>Mailbox restoration or repair</option>
+                  <option>Driveway piers or entry columns</option>
+                  <option>Stone steps or entrance</option>
+                  <option>Stone wall</option>
+                  <option>Outdoor kitchen or fire pit</option>
+                  <option>Patio or walkway</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="project-details">Project details</label>
+              <textarea id="project-details" name="project_details" rows="4" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New Flores Landscaping estimate request">
+            <button class="btn btn-gold btn-block" type="submit">Send Request</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
         </div>
-      </section>
-
-      <section class="intro container">
-        <p class="section-kicker">Stonework first</p>
-        <h2>Luxury stone masonry with quiet confidence.</h2>
-        <p class="text">Custom stone mailboxes, entrance upgrades, patios, walkways, walls, and masonry repair for homes that appreciate calm, premium finishes.</p>
-      </section>
-
-      <section class="feature-panel container">
-        <div class="feature-copy">
-          <span class="eyebrow">Signature service</span>
-          <h2>Custom Stone Mailboxes</h2>
-          <p>A refined front-of-home upgrade with lasting curb appeal and premium masonry detail.</p>
-        </div>
-        <div class="feature-image">
-          <img src="images/mailbox_address_sign.jpg" alt="Custom stone mailbox with address sign built by Flores Landscaping" loading="lazy">
-        </div>
-      </section>
-
-      <section class="services container">
-        <div class="section-header">
-          <span class="eyebrow">What we build</span>
-          <h2>Stonework that elevates the entrance.</h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <h3>Custom Stone Mailboxes</h3>
-            <p>Refined mailbox installations with polished stone details.</p>
-          </article>
-          <article class="service-card">
-            <h3>Patios</h3>
-            <p>Paver and flagstone patios designed for refined outdoor living.</p>
-          </article>
-          <article class="service-card">
-            <h3>Stone Walkways</h3>
-            <p>Clean paths that add beauty and function to the entry sequence.</p>
-          </article>
-          <article class="service-card">
-            <h3>Stone Walls</h3>
-            <p>Garden walls, borders, and entrance accents with quiet strength.</p>
-          </article>
-          <article class="service-card">
-            <h3>Masonry Repairs</h3>
-            <p>Careful repairs for steps, walls, and stone features.</p>
-          </article>
-          <article class="service-card">
-            <h3>Front Entrance Upgrades</h3>
-            <p>Stonework that makes the home feel complete and welcoming.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="process-section container" id="process">
-        <p class="section-kicker">Our Process</p>
-        <h2>Simple, clear, professional.</h2>
-
-        <div class="process-steps">
-          <article class="process-card active" tabindex="0" data-process="consultation">
-            <span class="process-number">1</span>
-            <h3>Consultation</h3>
-            <p>We visit the property and listen to your goals.</p>
-          </article>
-
-          <article class="process-card" tabindex="0" data-process="estimate">
-            <span class="process-number">2</span>
-            <h3>Estimate</h3>
-            <p>You receive a clear written estimate.</p>
-          </article>
-
-          <article class="process-card" tabindex="0" data-process="installation">
-            <span class="process-number">3</span>
-            <h3>Installation</h3>
-            <p>We build the stonework with care and detail.</p>
-          </article>
-
-          <article class="process-card" tabindex="0" data-process="finish">
-            <span class="process-number">4</span>
-            <h3>Finish</h3>
-            <p>We clean the site and complete final touches.</p>
-          </article>
-        </div>
-
-        <div class="process-preview" aria-live="polite">
-          <img src="images/process-consultation.jpg" alt="Flores Landscaping consultation with homeowner on property" class="preview-image">
-          <div class="process-preview-copy">
-            <h3>Consultation</h3>
-            <p>A clear conversation before the work begins.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="work-preview container">
-        <div class="section-header">
-          <span class="eyebrow">Portfolio highlight</span>
-          <h2>Stonework that makes every first impression feel deliberate.</h2>
-        </div>
-        <div class="work-grid">
-          <article class="work-card">
-            <img src="images/hero-stone-mailbox.jpeg" alt="Custom stone mailbox built by Flores Landscaping" loading="lazy">
-            <h3>Stone Mailboxes</h3>
-            <p>Elegant, built-to-last front-entry details.</p>
-          </article>
-          <article class="work-card">
-            <img src="images/hero-stone-patio.jpeg" alt="Finished stone patio with clean stone edges" loading="lazy">
-            <h3>Patios</h3>
-            <p>Paver and flagstone patios designed for refined outdoor living.</p>
-          </article>
-          <article class="work-card">
-            <img src="images/hero-outdoor-stone-kitchen.jpeg" alt="Outdoor stone kitchen and patio feature" loading="lazy">
-            <h3>Outdoor Living</h3>
-            <p>Custom stone features that complete exterior living spaces.</p>
-          </article>
-        </div>
-        <div class="hero-ctas work-actions">
-          <a class="btn btn-primary" href="work.html">View Gallery</a>
-          <a class="btn btn-secondary" href="#contact">Request an Estimate</a>
-        </div>
-      </section>
-
-      <section class="contact-section container" id="contact">
-        <div class="contact-copy">
-          <span class="eyebrow">Request an estimate</span>
-          <h2>Start your luxury stonework project.</h2>
-          <p>Share a few details and we’ll follow up with a clear consultation plan focused on stonework and curb appeal.</p>
-        </div>
-        <form class="contact-form estimate-form" id="contactForm" action="https://formspree.io/f/mqeozvqd" method="POST" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required>
-
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" required>
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required>
-
-          <label for="project-type">Project type</label>
-          <select id="project-type" name="project_type" required>
-            <option value="Custom stone mailbox">Custom stone mailbox</option>
-            <option value="Patio">Patio</option>
-            <option value="Stone walkway">Stone walkway</option>
-            <option value="Stone wall">Stone wall</option>
-            <option value="Grass installation">Grass installation</option>
-            <option value="Clean up">Clean up</option>
-            <option value="Masonry repair">Masonry repair</option>
-            <option value="Outdoor living">Outdoor living</option>
-            <option value="Other">Other</option>
-          </select>
-
-          <label for="project-details">Project details</label>
-          <textarea id="project-details" name="project_details" rows="5" required></textarea>
-
-          <input type="hidden" name="_subject" value="New Flores Landscaping Estimate Request">
-
-          <button class="btn btn-primary" type="submit">Send Request</button>
-        </form>
-        <div id="contactFormMessage" class="form-message" aria-live="polite"></div>
       </section>
     </main>
 
-    <footer class="site-footer container">
-      <p>&copy; <span id="year"></span> Flores Landscaping.</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">Flores Landscaping</p>
+          <p>Stone masonry since 2002 · Potomac, Bethesda, Rockville, NW DC</p>
+        </div>
+        <div class="footer-links">
+          <a href="tel:+12404621150">(240) 462-1150</a>
+          <a href="https://www.facebook.com/profile.php?id=100049560979613" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/lustrous_landscape/" rel="noopener">Instagram</a>
+          <a href="https://yelp.to/qTKq/NE5P4L0BE5" rel="noopener">Yelp</a>
+        </div>
+        <p class="copyright">&copy; <span id="year">2026</span> Flores Landscaping</p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Mobile call / estimate bar -->
+    <div class="mobile-bar">
+      <a href="tel:+12404621150">Call</a>
+      <a href="#contact" class="mobile-bar-primary">Free Estimate</a>
+    </div>
+
+    <script src="site.js"></script>
   </body>
 </html>
