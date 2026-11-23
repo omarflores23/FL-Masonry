@@ -1,44 +1,40 @@
 # FL-Masonry
-Premium stonework website scaffold for custom stone mailboxes and front entrance upgrades.
 
-Files added:
-- `index.html` — homepage and sections (hero, services, gallery, contact form)
-- `styles.css` — responsive styles with accessible typography and color palette
-- `script.js` — small JS for mobile nav, year, and form handling
+Website for Flores Landscaping (floreslandscapingdmv.com): hand-built stone steps, walls, flagstone patios, water features and stone mailbox pillars by Juan Flores, serving Montgomery County, Washington, DC and Northern Virginia since 2002. Published with GitHub Pages from `main`.
 
-How to use:
-1. Open `index.html` in a browser (double-click or serve with a static server).
-2. Replace placeholder images with real project photos to improve SEO and trust.
-3. Update the phone number in `index.html` to the business phone.
-4. Hook the contact form to your backend or form service (Mailgun, Formspree, Netlify Forms, etc.).
+Designed for older homeowners: cream, forest green and brass; 20px body text; large buttons; the phone number on every screen; plain wording.
 
-Design notes:
-- Focused on older, higher-income homeowners in MD/DC/VA.
-- Emphasizes custom stone mailboxes and front entrance upgrades; finishing touches (mulch, edging, planting) are shown only as add-ons to masonry work.
-- Large type, clear CTAs, and high-contrast colors for readability and accessibility.
+## Files
 
-To serve locally (quick):
+| File | What it is |
+| --- | --- |
+| `index.html` | Home page: hero, services, before and after, mailbox pillars, About Juan, recent work, landscaping, how it works, service area, estimate form |
+| `work.html` | Gallery with filter buttons and a photo viewer (Previous / Next / Close, arrow keys, Escape) |
+| `site.css` | All styles |
+| `site.js` | Mobile menu, estimate form (Formspree), gallery filters, photo viewer |
+| `images/work/` | Project photos from the business Instagram (@floreslandscaping_dmv) |
+| `images/` | Earlier project photos, some still used |
+| `CNAME` | Custom domain for GitHub Pages |
 
-Using Python 3 (built-in):
+`styles.css` and `script.js` belong to an earlier version and are no longer used. Delete them once this version is live.
+
+`site.css` and `site.js` are linked with a version tag (`?v=6`). Raise the number after editing either file so visitors' browsers load the new copy.
+
+## Before merging to `main`, confirm
+
+1. **Phone.** (240) 462-1150. Search `462-1150` and `+12404621150` to change it.
+2. **Wording about Juan.** The About section says he has worked with stone since 2002 and lists the stones he uses (taken from Instagram captions). Adjust anything that isn't right.
+3. **Client address photo.** `images/mailbox_address_sign.jpg` shows a client's house number and street. The site no longer uses it. Delete it or blur it.
+4. **A photo of Juan** would make the About section stronger. Add it to `images/work/` and swap it in.
+
+## Preview locally
+
 ```bash
-python -m http.server 8000
-# then open http://localhost:8000 in your browser
+python3 -m http.server 8000
 ```
 
-Using Node (serve):
-```bash
-npx serve . 3000
-# then open http://localhost:3000 in your browser
-```
+Then open http://localhost:8000.
 
-Files to replace with real content:
-- `images/hero.svg` — hero image placeholder
-- `images/mailbox1.svg`, `mailbox2.svg`, `mailbox3.svg`, `entrance.svg` — service cards
-- `images/before.svg`, `images/after.svg` — gallery placeholders
+## After it goes live
 
-Open `index.html` after serving to view the full layout and replace the SVGs with real photos (use the same filenames or update the `src` attributes in `index.html`).
-
-Next steps:
-- Add real project photos to the `images/` folder and update `index.html` image tags.
-- Provide the business phone number, company name, and any certifications to include on the site.
-
+Open the site on a phone, tap **Call Now**, and send one test estimate request to confirm it arrives.
