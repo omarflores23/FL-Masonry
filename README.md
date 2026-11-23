@@ -17,16 +17,25 @@ Designed for older homeowners: cream, forest green and brass; 20px body text; la
 | `images/` | Earlier project photos, some still used |
 | `CNAME` | Custom domain for GitHub Pages |
 
-`styles.css` and `script.js` belong to an earlier version and are no longer used. Delete them once this version is live.
-
 `site.css` and `site.js` are linked with a version tag (`?v=7`). Raise the number after editing either file so visitors' browsers load the new copy.
 
-## Before merging to `main`, confirm
+## Still to confirm
 
 1. **Phone.** (240) 462-1150. Search `462-1150` and `+12404621150` to change it.
 2. **Wording about Juan.** The About section says he has worked with stone since 2002 and lists the stones he uses (taken from Instagram captions). Adjust anything that isn't right.
-3. **Client address photo.** `images/mailbox_address_sign.jpg` shows a client's house number and street. The site no longer uses it. Delete it or blur it.
-4. **A photo of Juan** would make the About section stronger. Add it to `images/work/` and swap it in.
+3. **A photo of Juan** would make the About section stronger. Add it to `images/work/` and swap it in.
+
+## Adding the MHIC license number
+
+Maryland requires the MHIC number on the website. To add it on GitHub:
+
+1. Open the file (for example `index.html`) on github.com and click the pencil icon (Edit).
+2. Press Cmd+F and search for `MHIC NUMBER`.
+3. On the line right below it, change `Flores Landscaping.` to `Flores Landscaping. MHIC No. 12345.` using Juan's real number.
+4. Click **Commit changes**.
+5. Repeat for `work.html` and `privacy.html`.
+
+The live site updates about a minute later.
 
 ## Preview locally
 
