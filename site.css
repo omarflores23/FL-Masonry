@@ -205,6 +205,8 @@ h3 { font-size: 1.3rem; }
 }
 .field textarea { min-height: 140px; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--brass); outline-offset: 1px; border-color: var(--forest); }
+.form-note { margin: 0; font-size: .9em; line-height: 1.5; color: var(--muted); }
+.form-note a { color: var(--forest); font-weight: 600; }
 .form-message { margin: 0; font-size: 1.05rem; font-weight: 600; min-height: 1.5em; }
 .form-message.error { color: #9b2c2c; }
 .form-message.success { color: var(--forest); }
@@ -301,3 +303,9 @@ h3 { font-size: 1.3rem; }
   .brand-name { font-size: 1.3rem; }
   .brand-sub { font-size: .75rem; }
 }
+
+/* Privacy page */
+.policy h2 { font-size: 1.5rem; margin: 40px 0 12px; }
+.policy h2:first-child { margin-top: 0; }
+.policy a { color: var(--forest); font-weight: 600; }
+.policy-date { margin-top: 40px; color: var(--muted); }

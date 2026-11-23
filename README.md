@@ -9,6 +9,7 @@ Designed for older homeowners: cream, forest green and brass; 20px body text; la
 | File | What it is |
 | --- | --- |
 | `index.html` | Home page: hero, services, before and after, mailbox pillars, About Juan, recent work, landscaping, how it works, service area, estimate form |
+| `privacy.html` | Privacy policy, linked under the estimate form and in the footer |
 | `work.html` | Gallery with filter buttons and a photo viewer (Previous / Next / Close, arrow keys, Escape) |
 | `site.css` | All styles |
 | `site.js` | Mobile menu, estimate form (Formspree), gallery filters, photo viewer |
@@ -18,7 +19,7 @@ Designed for older homeowners: cream, forest green and brass; 20px body text; la
 
 `styles.css` and `script.js` belong to an earlier version and are no longer used. Delete them once this version is live.
 
-`site.css` and `site.js` are linked with a version tag (`?v=6`). Raise the number after editing either file so visitors' browsers load the new copy.
+`site.css` and `site.js` are linked with a version tag (`?v=7`). Raise the number after editing either file so visitors' browsers load the new copy.
 
 ## Before merging to `main`, confirm
 
